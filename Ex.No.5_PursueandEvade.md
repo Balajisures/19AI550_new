@@ -1,10 +1,10 @@
 # Ex.No: 5  Implementation of Steering behaviour-Pursue and Evade in Unity
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE:  09/09/2025                                                                       
+### REGISTER NUMBER : 212223040024
 ### AIM: 
 To write a program to simulate the process of Pursue and Evade behavior in Unity using NavigationMeshAgent. 
 ### Algorithm:
-```
+
 1. Create a New Unity Project by Open the  Unity Hub and create a new 3D Project.
 2. Name the project "SteeringBehaviors" and select a location. Click Create.
 3.Open Unity Scene (default is SampleScene).
@@ -15,9 +15,9 @@ To write a program to simulate the process of Pursue and Evade behavior in Unity
   Rename them to "Player", "Pursuer", and "Evader".
   Set their Y Position to 0.5 (so they sit on the ground).
   Change their Material for better distinction (optional).
-3. Check AI navigation in window.
- Window → AI → Navigation (opens the Navigation tab).  If it is not available then add package by name "com.unity.ai.navigation"
-4. Select the Plane, go to the Navigation tab, and mark it as Navigation Static.
+3. Add NavMesh and Bake
+   Window → AI → Navigation (opens the Navigation tab).
+   Select the Plane, go to the Navigation tab, and mark it as Navigation Static.
    Go to the Bake tab and click Bake.
    or
    Add navMeshSurface to plane and bake 
@@ -30,6 +30,12 @@ To write a program to simulate the process of Pursue and Evade behavior in Unity
     Evader: Set Speed = 6.
 5. Write a script for  Player_movement behavior and save it
 
+6. Attach the Script to each player,pursuer and Evader.
+   Drag & Drop the Target from the Hierarchy into the "Target" field in the script component ( For pursuer and Evader).
+7. Run the game 
+8. Stop the program
+### PROGRAM
+```
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -100,19 +106,9 @@ public class Pursuer: MonoBehaviour
         pursue();          
      }
 }
-7. Attach the Script to each player,pursuer and Evader.
-   Drag & Drop the Target from the Hierarchy into the "Target" field in the script component ( For pursuer and Evader).
-12. Run the game 
-13. Stop the program
-    
 ```
 ### Output:
-
-
-
-
-
-
+![WhatsApp Image 2025-08-26 at 10 45 05_dee574bd](https://github.com/user-attachments/assets/c8ecc3fd-5ea6-42b4-9e25-a7eb6a4cba97)
 
 
 
